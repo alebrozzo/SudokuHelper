@@ -53,3 +53,79 @@
 .sudoku-row:nth-child(6) {
   border-bottom: 2px solid #000;
 }
+
+.cell-container {
+  position: relative;
+  width: 60px;
+  height: 60px;
+}
+
+.pencil-marks {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.pencil-mark {
+  position: absolute;
+  font-size: 0.8rem;
+  color: #666;
+  display: block;
+}
+
+/* Position for each number 1-9 */
+.pencil-mark.pos-1 {
+  top: 2px;
+  left: 2px;
+}
+.pencil-mark.pos-2 {
+  top: 2px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.pencil-mark.pos-3 {
+  top: 2px;
+  right: 2px;
+}
+.pencil-mark.pos-4 {
+  top: 50%;
+  left: 2px;
+  transform: translateY(-50%);
+}
+.pencil-mark.pos-5 {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.pencil-mark.pos-6 {
+  top: 50%;
+  right: 2px;
+  transform: translateY(-50%);
+}
+.pencil-mark.pos-7 {
+  bottom: 2px;
+  left: 2px;
+}
+.pencil-mark.pos-8 {
+  bottom: 2px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.pencil-mark.pos-9 {
+  bottom: 2px;
+  right: 2px;
+}
+
+.sudoku-cell {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-size: 1.2rem;
+  border: none;
+  padding: 0;
+  background-color: white;
+  color: black;
+}
