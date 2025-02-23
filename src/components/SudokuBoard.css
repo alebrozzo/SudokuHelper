@@ -36,16 +36,17 @@
   position: absolute;
   top: 0;
   bottom: 0;
-  width: 2px;
+  width: 3px;
   background-color: #000;
+  z-index: 1;
 }
 
 .sudoku-board::before {
-  left: 33.33%;
+  left: 33%;
 }
 
 .sudoku-board::after {
-  right: 33.33%;
+  right: 33%;
 }
 
 /* Horizontal lines */
