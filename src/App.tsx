@@ -1,7 +1,13 @@
+import { SudokuBoard } from './components/SudokuBoard'
 import './App.css'
 
 function App() {
-  return <>Code here</>
+  return (
+    <div className="App">
+      <h1>Sudoku</h1>
+      <SudokuBoard />
+    </div>
+  )
 }
 
 export default App

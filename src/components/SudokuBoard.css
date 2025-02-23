@@ -1,0 +1,36 @@
+.sudoku-board {
+  display: grid;
+  gap: 1px;
+  background-color: #ccc;
+  padding: 1px;
+}
+
+.sudoku-row {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  gap: 1px;
+}
+
+.sudoku-cell {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  font-size: 1.2rem;
+  border: none;
+  padding: 0;
+}
+
+.sudoku-cell::-webkit-inner-spin-button,
+.sudoku-cell::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Add borders for 3x3 boxes */
+.sudoku-cell:nth-child(3n) {
+  border-right: 2px solid #666;
+}
+
+.sudoku-row:nth-child(3n) .sudoku-cell {
+  border-bottom: 2px solid #666;
+}
